@@ -37,14 +37,29 @@
 # --------------------------------------------------
 # 4. check if a string is palindrome
 
-string = input("enter a string : ")
+# string = input("enter a string : ")
 
-reversed_string = "".join(reversed(string))
+# reversed_string = "".join(reversed(string))
 
-if string == reversed_string :
+# if string == reversed_string :
 
-    print(reversed_string ,"is palimdrome")
+#     print(reversed_string ,"is palimdrome")
 
-else:
-    
-    print("it is not palindome")
+# else:
+
+#     print("it is not palindome")
+
+# ----------------------------------------------------
+
+# 5. count frequency of character in a string
+
+s = "GeeksforGeeks"
+freq = {}
+
+for c in s:
+    if c in freq:
+        freq[c] += 1
+    else:
+        freq[c] = 1
+
+print(freq)
