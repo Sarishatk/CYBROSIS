@@ -3,7 +3,7 @@
 # company = "cybrosys"
 # reverse ="". join(reversed(company))
 # print(reverse)
-
+# ---------------------------------------------------------------
 # 2. To check the number is prime or not
 
 # num = int(input("Enter a number : "))
@@ -15,22 +15,36 @@
 #         break
 # else:
 #     print("it is a prime number")
-
+# -----------------------------------------------------------
 # 3 . fibonacci series up to n
 
-n = int(input("Enter the number of terms: "))
+# n = int(input("Enter the number of terms: "))
 
-a, b = 0, 1
-count = 0
+# a, b = 0, 1
+# count = 0
 
-if n <= 0:
-    print("Please enter a positive integer")
-elif n == 1:
-    print("Fibonacci sequence:")
-    print(a)
+# if n <= 0:
+#     print("Please enter a positive integer")
+# elif n == 1:
+#     print("Fibonacci sequence:")
+#     print(a)
+# else:
+#     print("Fibonacci sequence:")
+#     while count < n:
+#         print(a, end=" ")
+#         a, b = b, a + b
+#         count += 1
+# --------------------------------------------------
+# 4. check if a string is palindrome
+
+string = input("enter a string : ")
+
+reversed_string = "".join(reversed(string))
+
+if string == reversed_string :
+
+    print(reversed_string ,"is palimdrome")
+
 else:
-    print("Fibonacci sequence:")
-    while count < n:
-        print(a, end=" ")
-        a, b = b, a + b
-        count += 1
+    
+    print("it is not palindome")
