@@ -52,14 +52,13 @@
 # ----------------------------------------------------
 
 # 5. count frequency of character in a string
-
-s = "GeeksforGeeks"
+string = "bvvdhhhdds"
 freq = {}
 
-for c in s:
-    if c in freq:
-        freq[c] += 1
+for word in string:
+    if word in freq:
+        freq[word] += 1
     else:
-        freq[c] = 1
+        freq[word] = 1
 
-print(freq)
+print(freq) 
